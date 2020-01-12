@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    //this defines what 1rem is
+    font-size: 62.5%;       //10px (1rem = 10px for this project)
+}
+
+body{
+    font-family: Lato, sans-serif;
+    height: 2000px;
+}

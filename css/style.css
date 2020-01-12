@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Lato, sans-serif;
+  height: 2000px; }
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf"); }
+
+.navbar {
+  height: 0;
+  width: 100%;
+  min-height: 6rem;
+  padding: 2rem;
+  overflow: hidden;
+  transition: height .3s ease-in-out;
+  position: fixed;
+  top: 0; }
+  .navbar__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__menu {
+        flex-direction: column; } }
+  .navbar__link:link, .navbar__link:visited {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .navbar__list-wrap {
+      margin-top: 2rem;
+      margin-bottom: 2rem; } }
+  .navbar__list {
+    display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list {
+        flex-direction: column; } }
+  .navbar__item {
+    list-style: none; }
+    .navbar__item:not(:last-child) {
+      padding-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__item {
+        padding-top: 2rem; } }
+  .navbar__social {
+    color: #f2f2f2;
+    font-size: 1.6rem;
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__social {
+        display: initial; } }
+  .navbar__social-icon:not(:first-child) {
+    padding-left: 1.5rem; }
+  .navbar__hamburger {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__hamburger {
+        display: initial; } }
+
+.collapse {
+  height: 45vh; }
+
+.show_icon {
+  display: initial; }
