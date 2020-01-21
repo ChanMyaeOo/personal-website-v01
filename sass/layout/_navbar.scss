@@ -7,6 +7,9 @@
     transition: height .3s ease-in-out;
     position: fixed;
     top: 0;
+    @include respond(phone){
+        background: $color-black !important;
+    }
 
     &__menu{
         display: flex;

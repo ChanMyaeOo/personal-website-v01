@@ -1,4 +1,6 @@
 const nav = document.getElementById("navbar");
+const toogleCollapse = document.querySelector(".toggleCollapse");
+//transparent background
 window.onscroll = ()=>{
     if(window.pageYOffset > 100){
         nav.style.background = "#000";
@@ -9,11 +11,7 @@ window.onscroll = ()=>{
 }
 
 //click event for toggle navbar
-$(document).ready(function(){
-    $navbar = $(".navbar");
-    $toggleCollapse = $(".toggleCollapse");
-    $toggleCollapse.click(function(){
-        $navbar.toggleClass("collapse");
-    })
+toogleCollapse.addEventListener('click', function(){
+    nav.classList.toggle('collapse');
 })
 
